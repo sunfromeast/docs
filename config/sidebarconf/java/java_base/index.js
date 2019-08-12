@@ -7,5 +7,5 @@ const children = [
 
 module.exports = [
 	'', //读取对应目录下的README.md
-	utils.genSidebar('Java基础', children),  //构建侧边栏分组
+//	utils.genSidebar('Java基础', children),  //构建侧边栏分组
 ];

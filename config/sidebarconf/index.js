@@ -11,7 +11,7 @@ const vuepress = require('./tools/vuepress/index.js');
  */
 module.exports = {
   // java基础
-  //'/java/java_base/': java_base,
+  '/java/java_base/': java_base,
 
   //工具
   '/tools/vuepress': vuepress

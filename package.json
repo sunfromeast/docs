@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/sunfromeast/sunfromeast.github.io#readme",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "vuepress": "^1.0.3"
   }
 }

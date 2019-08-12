@@ -5,6 +5,6 @@ const children = [
 ]
 
 module.exports = [
-    '/tools/vuepress/2019-8-10-vuepress使用'
+    '/tools/vuepress/'
 //	utils.genSidebar('vuePress使用', children, false),  //构建侧边栏分组
 ];

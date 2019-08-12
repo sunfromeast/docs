@@ -25,7 +25,18 @@ module.exports = [
 			{text: 'Linux基础', link: '/linux/linux_base/'}
 		]
 	},
-	{text: 'Kubernetes相关', link: '/kubernetes/'},
+	{
+		text: '容器云相关',
+		items: [
+			{
+				text: 'Kubernetes相关',
+				items: [
+					{text: 'Docker', link: '/container_cloud/docker/'},
+					{text: 'Kubernetes', link: '/container_cloud/kubernetes/'}
+				] 
+			}
+		]
+	},
 	{text: '前端相关', link: '/frontend/'},
 	{
 		text: '工具',
