@@ -1,7 +1,7 @@
 // java基础
 const java_base = require('./java/java_base/index.js');
 const vuepress = require('./tools/vuepress/index.js');
-const kubernetes = require('./container_cloud/kubernetes/index.js')
+const kubernetes = require('./containercloud/kubernetes/index.js')
 
 /**
  * 侧边栏的配置
