@@ -15,7 +15,7 @@ module.exports = {
   '/java/java_base/': java_base,
 
   // 容器云
-  '/container_cloud/kubernetes/': kubernetes,
+  '/containercloud/kubernetes/': kubernetes,
   //工具
   '/tools/vuepress': vuepress
 
