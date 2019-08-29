@@ -5,7 +5,7 @@ module.exports = [
 			{
 				text: '基础',
 				items: [
-				{text: 'Java基础', link: '/java/java_base/'},
+				{text: 'Java基础', link: '/java/javabase/'},
 				{text: 'Spring', link: '/java/spring/'},
 				{text: 'SpringBoot', link: '/java/springboot/'},
 				{text: 'SpringCloud', link: '/java/springcloud/'}
@@ -31,8 +31,8 @@ module.exports = [
 			{
 				text: 'Kubernetes相关',
 				items: [
-					{text: 'Docker', link: '/container_cloud/docker/'},
-					{text: 'Kubernetes', link: '/container_cloud/kubernetes/'}
+					{text: 'Docker', link: '/containercloud/docker/'},
+					{text: 'Kubernetes', link: '/containercloud/kubernetes/'}
 				] 
 			}
 		]

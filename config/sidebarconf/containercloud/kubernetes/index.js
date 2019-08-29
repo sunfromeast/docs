@@ -2,8 +2,6 @@
 const utils = require('../../../utils/index.js')
 
 const children = [
-	'/java/java_base/test1',
-	'/java/java_base/test2'
 ]
 
 module.exports = [

@@ -1,5 +1,5 @@
 // java基础
-const java_base = require('./java/java_base/index.js');
+const java_base = require('./java/javabase/index.js');
 const vuepress = require('./tools/vuepress/index.js');
 const kubernetes = require('./containercloud/kubernetes/index.js')
 
@@ -12,7 +12,7 @@ const kubernetes = require('./containercloud/kubernetes/index.js')
  */
 module.exports = {
   // java基础
-  '/java/java_base/': java_base,
+  '/java/javabase/': java_base,
 
   // 容器云
   '/containercloud/kubernetes/': kubernetes,
