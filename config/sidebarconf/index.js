@@ -1,6 +1,7 @@
 // java基础
 const java_base = require('./java/java_base/index.js');
 const vuepress = require('./tools/vuepress/index.js');
+const kubernetes = require('./container_cloud/kubernetes/index.js')
 
 /**
  * 侧边栏的配置
@@ -13,6 +14,8 @@ module.exports = {
   // java基础
   '/java/java_base/': java_base,
 
+  // 容器云
+  '/container_cloud/kubernetes/': kubernetes,
   //工具
   '/tools/vuepress': vuepress
 

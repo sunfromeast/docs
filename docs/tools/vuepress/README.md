@@ -16,6 +16,23 @@ yarn add -D vuepress # 或者：npm install -D vuepress
 
 #4 新建docs文件夹
 mkdir docs
+
+#5 创建.vuepress
+cd docs
+mkdir .vuepress
+
+#6 创建config.js
+cd .vuepress
+touch config.js
+
+#7 新建public目录
+mkdir public
+
+#设置package.json脚本
+"scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+  }
 ```
 
 参考：
@@ -189,3 +206,8 @@ module.exports = utils;
 
 1. 新增导航栏，只需要在根目录`config/navconf.js`中修改即可。
 2. 新增侧边栏。先要建立对应目录的`index.js`文件，然后，将单个目录的`index.js`在`config/sidebarconf/index.js`中引用即可
+
+参考：
+
+1. [一步步搭建 VuePress 及优化【初始化到发布】](https://juejin.im/post/5c9efe596fb9a05e122c73f1)
+
