@@ -22,7 +22,7 @@ module.exports = [
 	{
 		text: 'Linux相关',
 		items: [
-			{text: 'Linux基础', link: '/linux/linux_base/'}
+			{text: 'Linux基础', link: '/linux/linuxbase/'}
 		]
 	},
 	{

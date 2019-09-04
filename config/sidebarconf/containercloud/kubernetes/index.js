@@ -5,11 +5,15 @@ const children = []
 const children_deploy = [
 	['/containercloud/kubernetes/2019-8-30-kubeadm.md', 'Kubeadm']
 ]
-
+//资源对象
 const children_resourceObject = [
 	['/containercloud/kubernetes/2019-8-31-secret.md', 'Secret']
 ]
 
+//资源管理
+const children_resourceManage = [
+	['/containercloud/kubernetes/2019-9-2-资源管理基础.md', '基础']
+]
 //认证授权
 const children_authorication = [
 	['/containercloud/kubernetes/2019-9-1-访问控制概述.md', "概述"],
@@ -27,7 +31,7 @@ module.exports = [
 	utils.genSidebar('基础介绍', children),  //构建侧边栏分组
 	utils.genSidebar('部署指南', children_deploy),  //构建侧边栏分组
 	utils.genSidebar('资源对象', children_resourceObject),  //构建侧边栏分组
-	utils.genSidebar('资源管理', children),  //构建侧边栏分组
+	utils.genSidebar('资源管理', children_resourceManage),  //构建侧边栏分组
 	utils.genSidebar('服务发现', children),  //构建侧边栏分组
 	utils.genSidebar('存储卷和数据持久化', children),  //构建侧边栏分组
 	utils.genSidebar('认证授权与准入控制', children_authorication),  //构建侧边栏分组
