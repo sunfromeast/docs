@@ -6,8 +6,8 @@ const children = [
 //shell部分
 const children_shell = [
 	['/linux/linuxbase/2019-9-2-管道命令.md', '管道命令'],
-	['/linux/linuxbase/2019-9-4-正则表达式.md', '正则表达式']
-	['/linux/linuxbase/2019-9-5-shellscript.md', "Shell Script"]
+	['/linux/linuxbase/2019-9-4-正则表达式.md', '正则表达式'],
+	['/linux/linuxbase/2019-9-5-shellscript.md', 'Shell Script']
 ]
 //工具总结
 const children_tools = [
