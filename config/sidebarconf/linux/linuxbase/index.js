@@ -11,7 +11,8 @@ const children_shell = [
 ]
 //工具总结
 const children_tools = [
-	['/linux/linuxbase/2019-8-29-openssl.md', 'openssl']
+	['/linux/linuxbase/2019-8-29-openssl.md', 'openssl'],
+	['/linux/linuxbase/2019-9-8-RPM_YUM.md', 'rpm和yum']
 ]
 module.exports = [
 	['', '前言'], //读取对应目录下的README.md
