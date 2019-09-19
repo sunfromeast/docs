@@ -3,7 +3,8 @@ const utils = require('../../../utils/index.js')
 
 const children = []
 const children_deploy = [
-	['/containercloud/kubernetes/2019-8-30-kubeadm.md', 'Kubeadm']
+	['/containercloud/kubernetes/2019-9-19-kubeadm概述.md', 'kubeadm概述'],
+	['/containercloud/kubernetes/2019-8-30-kubeadm.md', 'Kubeadm部署集群']
 ]
 //资源对象
 const children_resourceObject = [
