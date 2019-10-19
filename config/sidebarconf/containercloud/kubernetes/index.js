@@ -10,7 +10,9 @@ const children_deploy = [
 const children_resourceObject = [
 	['/containercloud/kubernetes/2019-9-3-pod.md', 'Pod'],
 	['/containercloud/kubernetes/2019-8-31-secret.md', 'Secret'],
-	['/containercloud/kubernetes/2019-10-18-StatefulSet.md', 'StatefulSet']
+	['/containercloud/kubernetes/2019-10-18-StatefulSet.md', 'StatefulSet'],
+	['/containercloud/kubernetes/2019-10-19-DaemonSet.md', 'DaemonSet'],
+	['/containercloud/kubernetes/2019-10-19-CronJob.md', 'CronJob']
 ]
 
 //资源管理
