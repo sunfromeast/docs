@@ -39,6 +39,12 @@ module.exports = [
 	},
 	{text: '前端相关', link: '/frontend/'},
 	{
+		text: '源码',
+		items: [
+			{text: 'SpringBoot源码', link: '/sourcecode/springboot/'}
+		]
+	},
+	{
 		text: '工具',
 		items: [
 			{text: 'vuepress使用', link: '/tools/vuepress/'}

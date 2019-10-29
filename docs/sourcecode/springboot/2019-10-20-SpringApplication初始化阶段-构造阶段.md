@@ -1,10 +1,10 @@
-## 构造阶段<sup> <font color=red size=3>[version：2.2.0.RELEASE]</font></sup>
+# 构造阶段<sup> <font color=red size=3>[version：2.2.0.RELEASE]</font></sup>
 
 
 
 SpringApplication的初始化阶段属于运行前的准备阶段。初始化阶段主要由两部分组成：构造阶段和初始化阶段。下面要先讲一下构造阶段。
 
-### SpringApplication的主配置类
+## SpringApplication的主配置类
 
 ​	以一个最简单的引导类为例：
 
@@ -70,7 +70,7 @@ public class SpringApplication{
 
 接下来，我会详细说明这几步。
 
-### 理解SpringApplication主配置类
+## 理解SpringApplication主配置类
 
 ​	主配置类有个特点，都是标注了`@EnableAutoConfiguration`或者`@SpringbootApplication`注解，其实`@SpringbootApplication`注解的元注解包含了`@EnableAutoConfiguration`注解，所以，本质上，主配置类是标注有`@EnableAutoConfiguration`的注解。
 
@@ -80,7 +80,7 @@ public class SpringApplication{
 
 ​	我们注意到，main()方法中将`DemoApplication.class`作为`SpringApplication#SpringApplication(Class... primarySource)`中`primarySource`的参数，这里的`pramarySource`其实是SpringBoot应用上下文的配置类。这个配置类其实不一定要用引导类`DemoApplication.class`，使用带有`@EnableAutoConfiguration`的类都可以作为上下文配置类。
 
-### 推断web应用类型
+## 推断web应用类型
 
 ​	推断web应用类型在初始化阶段构造`SpringApplication`实例的过程中进行，当然，在`SpringApplication`实例构造后，`run()`方法执行前，还可以通过`setWebApplicationType()`方法调整。推断web应用类型实现方法是：检查当前`ClassLoader`下基准类的存在性判断。
 
@@ -111,7 +111,7 @@ static WebApplicationType deduceFromClasspath() {
 
 这个方法主要利用`ClassUtils.isPresetn()`判断`DispatcherHandler`、`DispatcherServlet`、`ServletContainer`、`Servlet`、`ConfigurableWebApplicationContext`存在性组合情况，判断web应用类型。
 
-### 加载Spring应用上下文初始化器
+## 加载Spring应用上下文初始化器
 
 这个过程包含两个动作：
 
@@ -171,11 +171,11 @@ private <T> List<T> createSpringFactoriesInstances(Class<T> type, Class<?>[] par
 
 > 遍历所有实现类，利用反射，拿到每个实现类的构造函数，然后，利用BeanUtils.instantiateClass()方法创建实例，将每个实例放入List中，将List返回。
 
-### 加载Spring应用事件监听器
+## 加载Spring应用事件监听器
 
 加载事件监听器的过程和加载应用上下文初始化器的过程基本一致。只不过，初始化的对象类型从`ApplicationContextInitializer`变成了`ApplicationListener`。
 
-### 推断应用引导类
+## 推断应用引导类
 
 构造过程的末尾动作，它执行的是：`deduceMainApplicationClass()`
 
@@ -198,19 +198,7 @@ private Class<?> deduceMainApplicationClass() {
 
 > 主要思想是：获取线程执行栈，进行遍历，判断栈中哪个类包含main方法
 
-### 小结
+## 小结
 
 至此，在`SpringApplication`的构造过程中，`SpringApplication`的属性`primarySource`、`webApplicationType`、`initializers`，`listeners`、`mainApplicaitonClass`都得到了初始化。
-
-## 配置阶段
-
-配置阶段位于构造阶段和运行阶段之间，该阶段是可选的，主要用于调整或补充构造阶段的状态。
-
-主要可以进入如下行为
-
-### 自定义SpringApplication
-
-> 1. 调整SpringApplication设置
-> 2. 增加SpringApplication配置源
-> 3. 调整SpringBoot外部化配置
 
