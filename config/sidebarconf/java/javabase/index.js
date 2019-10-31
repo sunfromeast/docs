@@ -5,7 +5,11 @@ const children = [
 //	'/java/java_base/test2'
 ]
 
+
+children_reflect = [
+	['/java/javabase/2019-10-31-反射.md', '反射']
+]
 module.exports = [
 	'', //读取对应目录下的README.md
-//	utils.genSidebar('Java基础', children),  //构建侧边栏分组
+	utils.genSidebar('反射', children_reflect),  //构建侧边栏分组
 ];
