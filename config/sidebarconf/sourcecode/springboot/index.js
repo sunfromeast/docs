@@ -12,7 +12,8 @@ const initialization = [
 ]
 
 const running_stage = [
-	['/sourcecode/springboot/2019-10-22-SpringApplication准备阶段.md', '准备阶段']
+	['/sourcecode/springboot/2019-10-22-SpringApplication准备阶段.md', '准备阶段'],
+	['/sourcecode/springboot/2019-10-22-理解SpringApplicationRunListeners.md', 'SpringApplicationRunListener'],
 ]
 module.exports = [
 	['', '前言'], //读取对应目录下的README.md
