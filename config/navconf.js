@@ -49,5 +49,11 @@ module.exports = [
 		items: [
 			{text: 'vuepress使用', link: '/tools/vuepress/'}
 		]
+	},
+	{
+		text: '其他',
+		items: [
+			{text: '剑指offer', link: '/others/offer/'}
+		]
 	}
 ];
